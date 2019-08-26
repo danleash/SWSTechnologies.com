@@ -1,32 +1,43 @@
 ﻿@import "https://fonts.googleapis.com/css?family=Montserrat&display=swap";
-
 body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    color: #000000;
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
-    background-image: url('../lib/images/maxresdefault.jpg');
+    background-image: url('theone.jpg');
     height: 100vh;
     background-size: cover;
     background-position: center;
-    position: fixed;
 }
 
-.form {
+.your-testimony{
     width: 360px;
     padding: 10% 0 0;
     margin: auto;
 }
-
-.ContactClientForm {
+.form{
     position: relative;
     z-index: 1;
     background: rgba(105, 105, 105, 0.8);
     max-width: 360px;
-    margin: 0 auto 10px;
+    margin: 0 auto 100px;
     padding: 45px;
     border-radius: 5px;
-    text-align: center;
+    text-align:center;
 }
-
-    .form-group input {
+.form input{
+    font-family: "Montserrat", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 5px;
+}
+    .form textarea {
         font-family: "Montserrat", sans-serif;
         outline: 0;
         background: #f2f2f2;
@@ -38,21 +49,7 @@ body {
         font-size: 14px;
         border-radius: 5px;
     }
-
-    .form-group textarea {
-        font-family: "Montserrat", sans-serif;
-        outline: 0;
-        background: #f2f2f2;
-        width: 100%;
-        border: 0;
-        margin: 0 0 15px;
-        padding: 15px;
-        box-sizing: border-box;
-        font-size: 14px;
-        border-radius: 5px;
-    }
-
-    .form-group button{
+    .form button {
         font-family: "Montserrat", sans-serif;
         text-transform: uppercase;
         outline: 0;

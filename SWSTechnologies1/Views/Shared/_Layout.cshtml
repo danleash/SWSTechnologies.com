@@ -36,7 +36,7 @@
                             <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="About">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="ContactUs">Contact Us</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="ContactClientForm">Contact Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Testimonials">Testimonials</a>
@@ -54,13 +54,22 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2019 - SWS Technologies - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-            <a asp-area="" asp-controller="Home" asp-action="ContactUs">Contact Us</a>
-            <a asp-area="" asp-controller="Home" asp-action="About">About</a>
-            <a asp-area="" asp-controller="Home" asp-action="Testimonials">Testimonials</a>
+    <footer class="border-top footer bg-light text-dark row">
+        
+            <div class="container col-sm-6 text-left">
+                &copy; 2019 - SWS Technologies -
+                <a asp-area="" asp-controller="Home" asp-action="HomePage">Home </a>
+                <a asp-area="" asp-controller="Home" asp-action="ContactClientForm">- Contact Us </a>
+                <a asp-area="" asp-controller="Home" asp-action="About">- About </a>
+                <a asp-area="" asp-controller="Home" asp-action="Testimonials">- Testimonials </a>
+            </div>
+        <div class="container col-md-6 text-center">
+            <p>Address: jhdfkjhsdfks
+            City, State, zip
+            Cell: (000)-000-0000
+            Hours: M-F hour - hour</p>
         </div>
+            
     </footer>
 
     <environment include="Development">

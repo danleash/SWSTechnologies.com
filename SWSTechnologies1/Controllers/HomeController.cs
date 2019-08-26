@@ -26,6 +26,20 @@ namespace SWSTechnologies.Controllers
         {
             return View("Testimonials");
         }
-
+        public ViewResult ContactClientForm()
+        {
+            ViewBag.Message = "How can we help you?";
+            return View("ContactClientForm");
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult ContactClientForm(ContactClientModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                return RedirectToAction("Index");
+            }
+            return View("ContactClientForm");
+        }
     }
 }
