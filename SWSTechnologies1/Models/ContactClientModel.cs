@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace SWSTechnologies1.Models
 {
-    public class ContactClientModel
+    public class ContactClientModel 
     {
         [StringLength(100, MinimumLength =6, ErrorMessage ="Enter your full name.")]
         [Required(ErrorMessage ="Please enter your full name.")]
@@ -23,7 +23,7 @@ namespace SWSTechnologies1.Models
         public string ConfirmEmailAdress { get; set; }
         [StringLength(1000, MinimumLength =50, ErrorMessage ="Your message must be 50 characters or more")]
         [Required(ErrorMessage ="Please tell us how we can help you, or what questions you have about our services.")]
-        public string Message { get; set; }
+        public string Message { get; set; } 
         
     }
 }
